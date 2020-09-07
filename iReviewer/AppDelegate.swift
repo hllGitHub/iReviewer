@@ -12,7 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+
+    // Configu UI
+    IReviewerAppearence.configUIBarButtonItemStyle()
+    IReviewerAppearence.configUINavigationbarStyle()
     return true
   }
 
@@ -30,5 +33,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+  }
+}
+
+class IReviewerAppearence {
+  fileprivate static func configUINavigationbarStyle() {
+    UINavigationBar.appearance().titleTextAttributes = [.font: UIFont.h3, .foregroundColor: UIColor.tint]
+    UINavigationBar.appearance().barTintColor = .barBg
+    UINavigationBar.appearance().isTranslucent = false
+
+    UINavigationBar.appearance().shadowImage = UIImage()
+    UINavigationBar.appearance().backIndicatorImage = UIImage()
+    UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage()
+  }
+
+  fileprivate static func configUIBarButtonItemStyle() {
+    UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.body2, .foregroundColor: UIColor.dft], for: .normal)
+    UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.body2, .foregroundColor: UIColor.dft], for: .highlighted)
+    UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -300, vertical: 0), for: UIBarMetrics.default)
+
+    let capInsets = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: -20)
+    let backImage = R.image.back()?.resizableImage(withCapInsets: capInsets).withRenderingMode(.alwaysOriginal)
+    UIBarButtonItem.appearance().setBackButtonBackgroundImage(backImage, for: .normal, barMetrics: .default)
+    UIViewController.swizzledViewDidLoad()
   }
 }

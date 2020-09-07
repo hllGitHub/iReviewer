@@ -18,14 +18,16 @@
 		23E9678E2505DCF30055DA9D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967842505DCF20055DA9D /* DiscoverViewController.swift */; };
 		23E9678F2505DCF30055DA9D /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967872505DCF20055DA9D /* AwardViewController.swift */; };
 		23E967922505DDCE0055DA9D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967912505DDCE0055DA9D /* MainTabBarViewController.swift */; };
-		23E967942505DE180055DA9D /* JHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967932505DE180055DA9D /* JHNavigationController.swift */; };
+		23E967942505DE180055DA9D /* IReviewerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967932505DE180055DA9D /* IReviewerNavigationController.swift */; };
 		23E967962505DF020055DA9D /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967952505DF020055DA9D /* StyleGuide.swift */; };
 		23E967982505E2D40055DA9D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967972505E2D40055DA9D /* ProfileViewController.swift */; };
-		23E967A62505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967A12505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf */; };
-		23E967A82505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967A42505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf */; };
 		23E967A92505FA6F0055DA9D /* root.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23E967A52505FA6F0055DA9D /* root.strings */; };
 		23E967AE2505FFC70055DA9D /* run-swiftlint.sh in Resources */ = {isa = PBXBuildFile; fileRef = 23E967AD2505FFC70055DA9D /* run-swiftlint.sh */; };
 		23E967B2250606E30055DA9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967B1250606E30055DA9D /* R.generated.swift */; };
+		23E967B4250609BF0055DA9D /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967B3250609BF0055DA9D /* AddTodoViewController.swift */; };
+		23E967B625060ABA0055DA9D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967B525060ABA0055DA9D /* UIViewControllerExtension.swift */; };
+		23E967C1250619F30055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967BF250619F30055DA9D /* HuaWenYuanTi-Regular.ttf */; };
+		23E967C2250619F30055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967C0250619F30055DA9D /* HuaWenYuanTi-Bold.ttf */; };
 		F437E74A64BFDD91D0D41379 /* Pods_iReviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE30C1BB38969E889DEE506D /* Pods_iReviewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,14 +59,16 @@
 		23E967842505DCF20055DA9D /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		23E967872505DCF20055DA9D /* AwardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
 		23E967912505DDCE0055DA9D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		23E967932505DE180055DA9D /* JHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHNavigationController.swift; sourceTree = "<group>"; };
+		23E967932505DE180055DA9D /* IReviewerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IReviewerNavigationController.swift; sourceTree = "<group>"; };
 		23E967952505DF020055DA9D /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		23E967972505E2D40055DA9D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		23E967A12505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Regular.ttf"; sourceTree = "<group>"; };
-		23E967A42505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Bold.ttf"; sourceTree = "<group>"; };
 		23E967A52505FA6F0055DA9D /* root.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = root.strings; sourceTree = "<group>"; };
 		23E967AD2505FFC70055DA9D /* run-swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-swiftlint.sh"; sourceTree = "<group>"; };
 		23E967B1250606E30055DA9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		23E967B3250609BF0055DA9D /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		23E967B525060ABA0055DA9D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		23E967BF250619F30055DA9D /* HuaWenYuanTi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Regular.ttf"; sourceTree = "<group>"; };
+		23E967C0250619F30055DA9D /* HuaWenYuanTi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Bold.ttf"; sourceTree = "<group>"; };
 		FE30C1BB38969E889DEE506D /* Pods_iReviewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iReviewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				23E9677F2505DCF20055DA9D /* HomeViewController.swift */,
+				23E967B3250609BF0055DA9D /* AddTodoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,7 +234,7 @@
 		23E9678A2505DCF20055DA9D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				23E967932505DE180055DA9D /* JHNavigationController.swift */,
+				23E967932505DE180055DA9D /* IReviewerNavigationController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				23E967952505DF020055DA9D /* StyleGuide.swift */,
+				23E967B525060ABA0055DA9D /* UIViewControllerExtension.swift */,
 			);
 			path = Utlis;
 			sourceTree = "<group>";
@@ -253,10 +259,10 @@
 		23E967A02505FA6F0055DA9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23E967C0250619F30055DA9D /* HuaWenYuanTi-Bold.ttf */,
+				23E967BF250619F30055DA9D /* HuaWenYuanTi-Regular.ttf */,
 				23E967B1250606E30055DA9D /* R.generated.swift */,
 				23E967AC2505FFC70055DA9D /* scripts */,
-				23E967A12505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf */,
-				23E967A42505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf */,
 				23E967A52505FA6F0055DA9D /* root.strings */,
 			);
 			path = Resources;
@@ -372,11 +378,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E967C2250619F30055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */,
 				23E967A92505FA6F0055DA9D /* root.strings in Resources */,
+				23E967C1250619F30055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */,
 				23E967572505D9F40055DA9D /* LaunchScreen.storyboard in Resources */,
 				23E967AE2505FFC70055DA9D /* run-swiftlint.sh in Resources */,
-				23E967A62505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */,
-				23E967A82505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */,
 				23E967542505D9F40055DA9D /* Assets.xcassets in Resources */,
 				23E967522505D9F20055DA9D /* Main.storyboard in Resources */,
 			);
@@ -480,10 +486,12 @@
 				23E9674B2505D9F20055DA9D /* AppDelegate.swift in Sources */,
 				23E967982505E2D40055DA9D /* ProfileViewController.swift in Sources */,
 				23E9674D2505D9F20055DA9D /* SceneDelegate.swift in Sources */,
+				23E967B4250609BF0055DA9D /* AddTodoViewController.swift in Sources */,
 				23E967922505DDCE0055DA9D /* MainTabBarViewController.swift in Sources */,
 				23E9678D2505DCF30055DA9D /* HomeViewController.swift in Sources */,
-				23E967942505DE180055DA9D /* JHNavigationController.swift in Sources */,
+				23E967942505DE180055DA9D /* IReviewerNavigationController.swift in Sources */,
 				23E9678F2505DCF30055DA9D /* AwardViewController.swift in Sources */,
+				23E967B625060ABA0055DA9D /* UIViewControllerExtension.swift in Sources */,
 				23E9678E2505DCF30055DA9D /* DiscoverViewController.swift in Sources */,
 				23E967B2250606E30055DA9D /* R.generated.swift in Sources */,
 				23E967962505DF020055DA9D /* StyleGuide.swift in Sources */,

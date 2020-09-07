@@ -18,6 +18,11 @@ def pod_base_module()
   pod 'SDWebImage', '5.1.1'
 end
 
+def pod_business_module()
+  pod 'CVCalendar', '~> 1.7.0'
+end
+
 target 'iReviewer'  do
 	pod_base_module()
+  pod_business_module()
 end

@@ -40,12 +40,12 @@ class MainTabBarViewController: UITabBarController {
 
     viewControllers = [homeViewController, discoverViewController, awardViewController, profileViewController]
 
-    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10.0), NSAttributedString.Key.foregroundColor: UIColor.iGray], for: .normal)
-    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10.0), NSAttributedString.Key.foregroundColor: UIColor.tint], for: .selected)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.customYuantiRegularFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor.iGray], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.customYuantiRegularFont(ofSize: 10.0), NSAttributedString.Key.foregroundColor: UIColor.tint], for: .selected)
   }
 
   private func configureControllerWrapper(title: String, selectedImage: UIImage?, image: UIImage?, viewController: UIViewController, itemTag: TabBarItemTag) -> UIViewController {
-    let controllerWrapper = JHNavigationController(rootViewController: viewController)
+    let controllerWrapper = IReviewerNavigationController(rootViewController: viewController)
     controllerWrapper.navigationBar.isTranslucent = false
     controllerWrapper.tabBarItem = UITabBarItem(title: title, image: image?.withRenderingMode(.alwaysOriginal), tag: itemTag.rawValue)
     controllerWrapper.tabBarItem.selectedImage = selectedImage?.withRenderingMode(.alwaysOriginal)
@@ -53,7 +53,7 @@ class MainTabBarViewController: UITabBarController {
   }
 
   private func configureControllerWrapper(tabBarSystemItem systemItem: UITabBarItem.SystemItem, viewController: UIViewController, itemTag: TabBarItemTag) -> UIViewController {
-    let controllerWrapper = JHNavigationController(rootViewController: viewController)
+    let controllerWrapper = IReviewerNavigationController(rootViewController: viewController)
     controllerWrapper.navigationBar.isTranslucent = false
     controllerWrapper.tabBarItem = UITabBarItem(tabBarSystemItem: systemItem, tag: itemTag.rawValue)
     return controllerWrapper

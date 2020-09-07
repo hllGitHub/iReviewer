@@ -1,5 +1,5 @@
 //
-//  JHNavigationController.swift
+//  IReviewerNavigationController.swift
 //  iReviewer
 //
 //  Created by liangliang hu on 2020/9/7.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class JHNavigationController: UINavigationController {
+public class IReviewerNavigationController: UINavigationController {
   private var isPushing = false
 
   override public func viewDidLoad() {
@@ -45,7 +45,7 @@ public class JHNavigationController: UINavigationController {
   }
 }
 
-extension JHNavigationController: UINavigationControllerDelegate {
+extension IReviewerNavigationController: UINavigationControllerDelegate {
   public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
     self.isPushing = false
   }

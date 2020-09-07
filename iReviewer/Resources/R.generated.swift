@@ -170,6 +170,21 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `back`.
+    static let back = Rswift.ImageResource(bundle: R.hostingBundle, name: "back")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "back", bundle: ..., traitCollection: ...)`
+    static func back(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.back, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.info` struct is generated, and contains static references to 1 properties.
   struct info {
     struct uiApplicationSceneManifest {
@@ -203,10 +218,12 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.root` struct is generated, and contains static references to 4 localization keys.
+    /// This `R.string.root` struct is generated, and contains static references to 5 localization keys.
     struct root {
       /// Value: 个人中心
       static let tabProfileTitle = Rswift.StringResource(key: "tab-profile-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 创建项目
+      static let todoTitle = Rswift.StringResource(key: "Todo-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 发现
       static let tabDiscoverTitle = Rswift.StringResource(key: "tab-discover-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 奖励
@@ -225,6 +242,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("tab-profile-title", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 创建项目
+      static func todoTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Todo-title", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "Todo-title"
+        }
+
+        return NSLocalizedString("Todo-title", tableName: "root", bundle: bundle, comment: "")
       }
 
       /// Value: 发现

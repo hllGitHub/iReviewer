@@ -29,6 +29,7 @@ public extension UIColor {
     return UIColor(r: 120, g: 130, b: 149)
   }
 
+  /// #FFFFFF
   @nonobjc class var fff: UIColor {
     return UIColor(white: 1.0, alpha: 1.0)
   }
@@ -79,6 +80,11 @@ public extension UIColor {
 public extension UIColor {
   @nonobjc class var separator: UIColor {
     return UIColor(r: 242, g: 244, b: 250)
+  }
+
+  /// #F1EFEE
+  @nonobjc class var barBg: UIColor {
+    return UIColor(r: 241, g: 239, b: 238)
   }
 }
 
@@ -135,52 +141,54 @@ public extension UIColor {
 }
 
 // Text styles
+private let regularYuantiFontName = "STYuanti-SC-Regular"
+private let boldYuantiFontName = "STYuanti-SC-Bold"
 
 public extension UIFont {
 
   /// Size: 30.0
   class var h1: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Bold", size: 30.0) ?? UIFont.systemFont(ofSize: 30.0)
+    return UIFont(name: boldYuantiFontName, size: 30.0) ?? UIFont.systemFont(ofSize: 30.0)
   }
 
   /// Size: 24.0
   class var h2: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Bold", size: 24.0) ?? UIFont.systemFont(ofSize: 24.0)
+    return UIFont(name: boldYuantiFontName, size: 24.0) ?? UIFont.systemFont(ofSize: 24.0)
   }
 
   /// Size: 20.0
   class var h3: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Bold", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
+    return UIFont(name: boldYuantiFontName, size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
   }
 
   /// Size: 50.0
   class var h4: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Bold", size: 50.0) ?? UIFont.systemFont(ofSize: 50.0)
+    return UIFont(name: boldYuantiFontName, size: 50.0) ?? UIFont.systemFont(ofSize: 50.0)
   }
 
   /// Size: 20.0
   class var body1: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Regular", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
+    return UIFont(name: regularYuantiFontName, size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
   }
 
   /// Size: 16.0
   class var body2: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Regular", size: 16.0) ?? UIFont.systemFont(ofSize: 16.0)
+    return UIFont(name: regularYuantiFontName, size: 16.0) ?? UIFont.systemFont(ofSize: 16.0)
   }
 
   /// Size: 12.0
   class var body3: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Regular", size: 12.0) ?? UIFont.systemFont(ofSize: 12.0)
+    return UIFont(name: regularYuantiFontName, size: 12.0) ?? UIFont.systemFont(ofSize: 12.0)
   }
 
   /// Size: 28.0
   class var body4: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Regular", size: 28.0) ?? UIFont.systemFont(ofSize: 28.0)
+    return UIFont(name: regularYuantiFontName, size: 28.0) ?? UIFont.systemFont(ofSize: 28.0)
   }
 
   /// Size: 14.0
   class var tip1: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Regular", size: 14.0) ?? UIFont.systemFont(ofSize: 14.0)
+    return UIFont(name: regularYuantiFontName, size: 14.0) ?? UIFont.systemFont(ofSize: 14.0)
   }
 }
 
@@ -207,6 +215,16 @@ public extension UIFont {
 public extension UIFont {
   /// Size: 18.0
   class var tip2: UIFont {
-    return UIFont(name: "HuaWenYuanTi-Regular", size: 18.0) ?? UIFont.systemFont(ofSize: 18.0)
+    return UIFont(name: regularYuantiFontName, size: 18.0) ?? UIFont.systemFont(ofSize: 18.0)
+  }
+}
+
+public extension UIFont {
+  class func customYuantiRegularFont(ofSize fontSize: CGFloat) -> UIFont {
+    return UIFont(name: regularYuantiFontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+  }
+
+  class func customYuantiBoldFont(ofSize fontSize: CGFloat) -> UIFont {
+    return UIFont(name: boldYuantiFontName, size: fontSize)  ?? UIFont.systemFont(ofSize: fontSize)
   }
 }

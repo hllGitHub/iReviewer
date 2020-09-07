@@ -14,5 +14,19 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
 
     title = R.string.root.tabHomeTitle()
+
+    configureNavigationItem()
+  }
+
+  func configureNavigationItem() {
+    self.navigationItem.title = R.string.root.tabHomeTitle()
+
+    // Add rightBarButtonItem for add todo.
+    let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTodo))
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem
+  }
+
+  @objc func addTodo() {
+    self.navigationController?.pushViewController(AddTodoViewController(), animated: true)
   }
 }
