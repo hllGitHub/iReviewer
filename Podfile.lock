@@ -1,0 +1,76 @@
+PODS:
+  - Differentiator (4.0.1)
+  - FSPagerView (0.8.3)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - PureLayout (3.1.4)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - RxBlocking (5.0.1):
+    - RxSwift (~> 5)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SDWebImage (5.1.1):
+    - SDWebImage/Core (= 5.1.1)
+  - SDWebImage/Core (5.1.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Differentiator (= 4.0.1)
+  - FSPagerView (= 0.8.3)
+  - IGListKit (= 4.0.0)
+  - PureLayout (= 3.1.4)
+  - R.swift
+  - RxBlocking (= 5.0.1)
+  - RxCocoa (= 5.0.1)
+  - RxDataSources (= 4.0.1)
+  - RxSwift (= 5.0.1)
+  - SDWebImage (= 5.1.1)
+  - SVProgressHUD (= 2.2.5)
+
+SPEC REPOS:
+  trunk:
+    - Differentiator
+    - FSPagerView
+    - IGListDiffKit
+    - IGListKit
+    - PureLayout
+    - R.swift
+    - R.swift.Library
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 3325aa113c448b4337ecdd1617a43af611900e7f
+
+COCOAPODS: 1.9.3

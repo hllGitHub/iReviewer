@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,8 +21,11 @@
 		23E967942505DE180055DA9D /* JHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967932505DE180055DA9D /* JHNavigationController.swift */; };
 		23E967962505DF020055DA9D /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967952505DF020055DA9D /* StyleGuide.swift */; };
 		23E967982505E2D40055DA9D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967972505E2D40055DA9D /* ProfileViewController.swift */; };
-		23E9679B2505E62C0055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967992505E62C0055DA9D /* HuaWenYuanTi-Bold.ttf */; };
-		23E9679C2505E62C0055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E9679A2505E62C0055DA9D /* HuaWenYuanTi-Regular.ttf */; };
+		23E967A62505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967A12505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf */; };
+		23E967A82505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967A42505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf */; };
+		23E967A92505FA6F0055DA9D /* root.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23E967A52505FA6F0055DA9D /* root.strings */; };
+		23E967AB2505FE0D0055DA9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967AA2505FE0D0055DA9D /* R.generated.swift */; };
+		F437E74A64BFDD91D0D41379 /* Pods_iReviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE30C1BB38969E889DEE506D /* Pods_iReviewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06891CE20CD70048F068C44A /* Pods-iReviewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iReviewer.release.xcconfig"; path = "Target Support Files/Pods-iReviewer/Pods-iReviewer.release.xcconfig"; sourceTree = "<group>"; };
+		19C5CC470F77D385F2DD3A20 /* Pods-iReviewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iReviewer.debug.xcconfig"; path = "Target Support Files/Pods-iReviewer/Pods-iReviewer.debug.xcconfig"; sourceTree = "<group>"; };
 		23E967472505D9F20055DA9D /* iReviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iReviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E9674A2505D9F20055DA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23E9674C2505D9F20055DA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +59,11 @@
 		23E967932505DE180055DA9D /* JHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHNavigationController.swift; sourceTree = "<group>"; };
 		23E967952505DF020055DA9D /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		23E967972505E2D40055DA9D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		23E967992505E62C0055DA9D /* HuaWenYuanTi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Bold.ttf"; sourceTree = "<group>"; };
-		23E9679A2505E62C0055DA9D /* HuaWenYuanTi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Regular.ttf"; sourceTree = "<group>"; };
+		23E967A12505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Regular.ttf"; sourceTree = "<group>"; };
+		23E967A42505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Bold.ttf"; sourceTree = "<group>"; };
+		23E967A52505FA6F0055DA9D /* root.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = root.strings; sourceTree = "<group>"; };
+		23E967AA2505FE0D0055DA9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		FE30C1BB38969E889DEE506D /* Pods_iReviewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iReviewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F437E74A64BFDD91D0D41379 /* Pods_iReviewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +91,8 @@
 				23E967492505D9F20055DA9D /* iReviewer */,
 				23E967602505D9F40055DA9D /* iReviewerTests */,
 				23E967482505D9F20055DA9D /* Products */,
+				F28A0D02337D9CA7A0ECA5F4 /* Pods */,
+				AEFEAF36B710015DD955A181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				23E9677C2505DCF20055DA9D /* Modules */,
-				23E9678A2505DCF20055DA9D /* Common */,
-				23E9678C2505DCF30055DA9D /* Resource */,
 				23E9678B2505DCF20055DA9D /* Utlis */,
+				23E9678A2505DCF20055DA9D /* Common */,
+				23E967A02505FA6F0055DA9D /* Resources */,
 				23E9674A2505D9F20055DA9D /* AppDelegate.swift */,
 				23E9674C2505D9F20055DA9D /* SceneDelegate.swift */,
 				23E9674E2505D9F20055DA9D /* ViewController.swift */,
@@ -229,21 +240,40 @@
 			path = Utlis;
 			sourceTree = "<group>";
 		};
-		23E9678C2505DCF30055DA9D /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				23E967992505E62C0055DA9D /* HuaWenYuanTi-Bold.ttf */,
-				23E9679A2505E62C0055DA9D /* HuaWenYuanTi-Regular.ttf */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		23E967902505DDBB0055DA9D /* Root */ = {
 			isa = PBXGroup;
 			children = (
 				23E967912505DDCE0055DA9D /* MainTabBarViewController.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		23E967A02505FA6F0055DA9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23E967AA2505FE0D0055DA9D /* R.generated.swift */,
+				23E967A12505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf */,
+				23E967A42505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf */,
+				23E967A52505FA6F0055DA9D /* root.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEFEAF36B710015DD955A181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE30C1BB38969E889DEE506D /* Pods_iReviewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F28A0D02337D9CA7A0ECA5F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19C5CC470F77D385F2DD3A20 /* Pods-iReviewer.debug.xcconfig */,
+				06891CE20CD70048F068C44A /* Pods-iReviewer.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23E967662505D9F40055DA9D /* Build configuration list for PBXNativeTarget "iReviewer" */;
 			buildPhases = (
+				68F4C87C0123B9DB89A8FAFB /* [CP] Check Pods Manifest.lock */,
+				23E9679D2505F89B0055DA9D /* R.swift */,
 				23E967432505D9F20055DA9D /* Sources */,
 				23E967442505D9F20055DA9D /* Frameworks */,
 				23E967452505D9F20055DA9D /* Resources */,
+				DBB15638E45A9867A95B115A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,9 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E967A92505FA6F0055DA9D /* root.strings in Resources */,
 				23E967572505D9F40055DA9D /* LaunchScreen.storyboard in Resources */,
-				23E9679C2505E62C0055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */,
-				23E9679B2505E62C0055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */,
+				23E967A62505FA6F0055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */,
+				23E967A82505FA6F0055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */,
 				23E967542505D9F40055DA9D /* Assets.xcassets in Resources */,
 				23E967522505D9F20055DA9D /* Main.storyboard in Resources */,
 			);
@@ -343,6 +377,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E9679D2505F89B0055DA9D /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/iReviewer/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/iReviewer/Resources/R.generated.swift\"\n\n";
+		};
+		68F4C87C0123B9DB89A8FAFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iReviewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB15638E45A9867A95B115A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iReviewer/Pods-iReviewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iReviewer/Pods-iReviewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iReviewer/Pods-iReviewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23E967432505D9F20055DA9D /* Sources */ = {
@@ -358,6 +454,7 @@
 				23E967942505DE180055DA9D /* JHNavigationController.swift in Sources */,
 				23E9678F2505DCF30055DA9D /* AwardViewController.swift in Sources */,
 				23E9678E2505DCF30055DA9D /* DiscoverViewController.swift in Sources */,
+				23E967AB2505FE0D0055DA9D /* R.generated.swift in Sources */,
 				23E967962505DF020055DA9D /* StyleGuide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +613,7 @@
 		};
 		23E967672505D9F40055DA9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C5CC470F77D385F2DD3A20 /* Pods-iReviewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +632,7 @@
 		};
 		23E967682505D9F40055DA9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06891CE20CD70048F068C44A /* Pods-iReviewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

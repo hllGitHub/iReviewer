@@ -13,7 +13,7 @@ class AwardViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = "Award"
+    title = R.string.root.tabAwardTitle()
     view.backgroundColor = .cyan
   }
 }

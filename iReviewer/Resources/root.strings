@@ -1,0 +1,12 @@
+/* 
+  root.strings
+  iReviewer
+
+  Created by liangliang hu on 2020/9/7.
+  Copyright © 2020 com.liangliang. All rights reserved.
+*/
+
+"tab-home-title" = "首页";
+"tab-discover-title" = "发现";
+"tab-award-title" = "奖励";
+"tab-profile-title" = "个人中心";

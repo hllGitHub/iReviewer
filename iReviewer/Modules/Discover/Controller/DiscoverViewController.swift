@@ -13,7 +13,7 @@ class DiscoverViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = "Discover"
+    title = R.string.root.tabDiscoverTitle()
     view.backgroundColor = .orange
   }
 

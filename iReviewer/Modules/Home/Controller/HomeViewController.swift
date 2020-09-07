@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = "Home"
+    title = R.string.root.tabHomeTitle()
   }
 }
 
