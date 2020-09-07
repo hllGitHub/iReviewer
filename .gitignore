@@ -125,3 +125,4 @@ fastlane/screenshots
 # scan temporary files
 fastlane/test_output
 iReviewer.xcodeproj/project.xcworkspace/xcuserdata
+iReviewer.xcodeproj/xcuserdata/lianglianghu.xcuserdatad/xcschemes

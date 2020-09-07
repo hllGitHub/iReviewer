@@ -16,6 +16,4 @@ class DiscoverViewController: UIViewController {
     title = R.string.root.tabDiscoverTitle()
     view.backgroundColor = .orange
   }
-
 }
-

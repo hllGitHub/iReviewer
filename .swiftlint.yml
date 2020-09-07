@@ -1,0 +1,52 @@
+disabled_rules:
+  - opening_brace
+  - identifier_name
+  - type_body_length
+  - file_length
+  - line_length
+  - for_where
+  - large_tuple
+  - nesting
+  - trailing_whitespace
+  - notification_center_detachment
+  - void_return
+  - shorthand_operator
+  - statement_position
+  - syntactic_sugar
+  - function_parameter_count
+  - type_name
+  - cyclomatic_complexity
+  - force_cast
+  - function_body_length
+  - redundant_optional_initialization
+  - class_delegate_protocol
+  - todo
+  - unused_setter_value
+
+opt_in_rules:
+  - force_unwrapping
+  
+type_name:
+  max_length: 100
+  excluded: fs
+
+force_cast: warning
+force_try: warning
+force_unwrapping: error
+
+nesting:
+  type_level: 2
+  statement_level: 4
+
+vertical_whitespace:
+  max_empty_lines: 2
+
+included:
+  - iReviewer
+excluded:
+  - Carthage
+  - Pods
+  - iReviewer/Reources
+  
+number_separator:
+  minimum_length: 5

@@ -16,4 +16,3 @@ class HomeViewController: UIViewController {
     title = R.string.root.tabHomeTitle()
   }
 }
-

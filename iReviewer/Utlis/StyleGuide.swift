@@ -210,4 +210,3 @@ public extension UIFont {
     return UIFont(name: "HuaWenYuanTi-Regular", size: 18.0) ?? UIFont.systemFont(ofSize: 18.0)
   }
 }
-

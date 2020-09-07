@@ -115,12 +115,14 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.file` struct is generated, and contains static references to 2 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
     /// Resource file `HuaWenYuanTi-Bold.ttf`.
     static let huaWenYuanTiBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "HuaWenYuanTi-Bold", pathExtension: "ttf")
     /// Resource file `HuaWenYuanTi-Regular.ttf`.
     static let huaWenYuanTiRegularTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "HuaWenYuanTi-Regular", pathExtension: "ttf")
+    /// Resource file `run-swiftlint.sh`.
+    static let runSwiftlintSh = Rswift.FileResource(bundle: R.hostingBundle, name: "run-swiftlint", pathExtension: "sh")
 
     /// `bundle.url(forResource: "HuaWenYuanTi-Bold", withExtension: "ttf")`
     static func huaWenYuanTiBoldTtf(_: Void = ()) -> Foundation.URL? {
@@ -131,6 +133,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "HuaWenYuanTi-Regular", withExtension: "ttf")`
     static func huaWenYuanTiRegularTtf(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.huaWenYuanTiRegularTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "run-swiftlint", withExtension: "sh")`
+    static func runSwiftlintSh(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.runSwiftlintSh
       return fileResource.bundle.url(forResource: fileResource)
     }
 

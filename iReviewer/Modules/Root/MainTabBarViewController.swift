@@ -66,4 +66,3 @@ enum TabBarItemTag: Int {
   case award
   case profile
 }
-
