@@ -1,4 +1,5 @@
 PODS:
+  - AFDateHelper (4.3.0)
   - CVCalendar (1.7.0)
   - Differentiator (4.0.1)
   - FSPagerView (0.8.3)
@@ -27,6 +28,7 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - AFDateHelper (~> 4.3.0)
   - CVCalendar (~> 1.7.0)
   - Differentiator (= 4.0.1)
   - FSPagerView (= 0.8.3)
@@ -42,6 +44,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AFDateHelper
     - CVCalendar
     - Differentiator
     - FSPagerView
@@ -59,6 +62,7 @@ SPEC REPOS:
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  AFDateHelper: b769c07d3d4784ee9a74633285304261bb27dc52
   CVCalendar: 1174c1b43c1a258970e14c1e8b19ef4106c5900b
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
@@ -75,6 +79,6 @@ SPEC CHECKSUMS:
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 1a07f16ce6fe51d1be05aa2a2f447fd9b4d51968
+PODFILE CHECKSUM: 6de1083bb80de398efa5d601095066d19a57ab08
 
 COCOAPODS: 1.9.3
