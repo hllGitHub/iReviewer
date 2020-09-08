@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Configu UI
     IReviewerAppearence.configUIBarButtonItemStyle()
     IReviewerAppearence.configUINavigationbarStyle()
+
+    AppConfiguration.shared.registerConfiguration(configurations: [], environment: .stage)
     return true
   }
 
@@ -48,8 +50,8 @@ class IReviewerAppearence {
   }
 
   fileprivate static func configUIBarButtonItemStyle() {
-    UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.body2, .foregroundColor: UIColor.dft], for: .normal)
-    UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.body2, .foregroundColor: UIColor.dft], for: .highlighted)
+    UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.customYuantiBoldFont(ofSize: 16), .foregroundColor: UIColor.tint], for: .normal)
+    UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.customYuantiBoldFont(ofSize: 16), .foregroundColor: UIColor.tint], for: .highlighted)
     UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -300, vertical: 0), for: UIBarMetrics.default)
 
     let capInsets = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: -20)
