@@ -28,6 +28,10 @@
 		23E967B625060ABA0055DA9D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967B525060ABA0055DA9D /* UIViewControllerExtension.swift */; };
 		23E967C1250619F30055DA9D /* HuaWenYuanTi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967BF250619F30055DA9D /* HuaWenYuanTi-Regular.ttf */; };
 		23E967C2250619F30055DA9D /* HuaWenYuanTi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23E967C0250619F30055DA9D /* HuaWenYuanTi-Bold.ttf */; };
+		23E967C625064EFA0055DA9D /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967C525064EFA0055DA9D /* AppConfiguration.swift */; };
+		23E967C825064F830055DA9D /* AppConfigurationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967C725064F830055DA9D /* AppConfigurationable.swift */; };
+		23E967CB25064FF90055DA9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967CA25064FF90055DA9D /* User.swift */; };
+		23E967CD250654D30055DA9D /* ModuleContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E967CC250654D30055DA9D /* ModuleContext.swift */; };
 		F437E74A64BFDD91D0D41379 /* Pods_iReviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE30C1BB38969E889DEE506D /* Pods_iReviewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +73,10 @@
 		23E967B525060ABA0055DA9D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		23E967BF250619F30055DA9D /* HuaWenYuanTi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Regular.ttf"; sourceTree = "<group>"; };
 		23E967C0250619F30055DA9D /* HuaWenYuanTi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HuaWenYuanTi-Bold.ttf"; sourceTree = "<group>"; };
+		23E967C525064EFA0055DA9D /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		23E967C725064F830055DA9D /* AppConfigurationable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationable.swift; sourceTree = "<group>"; };
+		23E967CA25064FF90055DA9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		23E967CC250654D30055DA9D /* ModuleContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleContext.swift; sourceTree = "<group>"; };
 		FE30C1BB38969E889DEE506D /* Pods_iReviewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iReviewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				23E9677C2505DCF20055DA9D /* Modules */,
+				23E967C325064ECF0055DA9D /* Service */,
 				23E9678B2505DCF20055DA9D /* Utlis */,
 				23E9678A2505DCF20055DA9D /* Common */,
 				23E967A02505FA6F0055DA9D /* Resources */,
@@ -274,6 +283,33 @@
 				23E967AD2505FFC70055DA9D /* run-swiftlint.sh */,
 			);
 			path = scripts;
+			sourceTree = "<group>";
+		};
+		23E967C325064ECF0055DA9D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				23E967C925064FF10055DA9D /* UserService */,
+				23E967C425064EEA0055DA9D /* Configuration */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		23E967C425064EEA0055DA9D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				23E967C525064EFA0055DA9D /* AppConfiguration.swift */,
+				23E967C725064F830055DA9D /* AppConfigurationable.swift */,
+				23E967CC250654D30055DA9D /* ModuleContext.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		23E967C925064FF10055DA9D /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				23E967CA25064FF90055DA9D /* User.swift */,
+			);
+			path = UserService;
 			sourceTree = "<group>";
 		};
 		AEFEAF36B710015DD955A181 /* Frameworks */ = {
@@ -485,15 +521,19 @@
 				23E9674F2505D9F20055DA9D /* ViewController.swift in Sources */,
 				23E9674B2505D9F20055DA9D /* AppDelegate.swift in Sources */,
 				23E967982505E2D40055DA9D /* ProfileViewController.swift in Sources */,
+				23E967CD250654D30055DA9D /* ModuleContext.swift in Sources */,
 				23E9674D2505D9F20055DA9D /* SceneDelegate.swift in Sources */,
+				23E967CB25064FF90055DA9D /* User.swift in Sources */,
 				23E967B4250609BF0055DA9D /* AddTodoViewController.swift in Sources */,
 				23E967922505DDCE0055DA9D /* MainTabBarViewController.swift in Sources */,
 				23E9678D2505DCF30055DA9D /* HomeViewController.swift in Sources */,
+				23E967C825064F830055DA9D /* AppConfigurationable.swift in Sources */,
 				23E967942505DE180055DA9D /* IReviewerNavigationController.swift in Sources */,
 				23E9678F2505DCF30055DA9D /* AwardViewController.swift in Sources */,
 				23E967B625060ABA0055DA9D /* UIViewControllerExtension.swift in Sources */,
 				23E9678E2505DCF30055DA9D /* DiscoverViewController.swift in Sources */,
 				23E967B2250606E30055DA9D /* R.generated.swift in Sources */,
+				23E967C625064EFA0055DA9D /* AppConfiguration.swift in Sources */,
 				23E967962505DF020055DA9D /* StyleGuide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

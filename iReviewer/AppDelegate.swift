@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Configu UI
     IReviewerAppearence.configUIBarButtonItemStyle()
     IReviewerAppearence.configUINavigationbarStyle()
+
+    AppConfiguration.shared.registerConfiguration(configurations: [], environment: .stage)
     return true
   }
 
