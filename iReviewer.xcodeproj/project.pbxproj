@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2307F7A92508A58000264944 /* LoggerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307F7A82508A58000264944 /* LoggerConfiguration.swift */; };
+		2307F7AB2508AB4300264944 /* AppWindowConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307F7AA2508AB4300264944 /* AppWindowConfiguration.swift */; };
 		23E9674B2505D9F20055DA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674A2505D9F20055DA9D /* AppDelegate.swift */; };
 		23E9674D2505D9F20055DA9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674C2505D9F20055DA9D /* SceneDelegate.swift */; };
 		23E9674F2505D9F20055DA9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674E2505D9F20055DA9D /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		06891CE20CD70048F068C44A /* Pods-iReviewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iReviewer.release.xcconfig"; path = "Target Support Files/Pods-iReviewer/Pods-iReviewer.release.xcconfig"; sourceTree = "<group>"; };
 		19C5CC470F77D385F2DD3A20 /* Pods-iReviewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iReviewer.debug.xcconfig"; path = "Target Support Files/Pods-iReviewer/Pods-iReviewer.debug.xcconfig"; sourceTree = "<group>"; };
+		2307F7A82508A58000264944 /* LoggerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerConfiguration.swift; sourceTree = "<group>"; };
+		2307F7AA2508AB4300264944 /* AppWindowConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowConfiguration.swift; sourceTree = "<group>"; };
 		23E967472505D9F20055DA9D /* iReviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iReviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E9674A2505D9F20055DA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23E9674C2505D9F20055DA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2307F7A72508A55E00264944 /* ServiceConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				2307F7A82508A58000264944 /* LoggerConfiguration.swift */,
+				2307F7AA2508AB4300264944 /* AppWindowConfiguration.swift */,
+			);
+			path = ServiceConfiguration;
+			sourceTree = "<group>";
+		};
 		23E9673E2505D9F20055DA9D = {
 			isa = PBXGroup;
 			children = (
@@ -297,9 +310,10 @@
 		23E967C425064EEA0055DA9D /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				23E967C525064EFA0055DA9D /* AppConfiguration.swift */,
-				23E967C725064F830055DA9D /* AppConfigurationable.swift */,
 				23E967CC250654D30055DA9D /* ModuleContext.swift */,
+				23E967C725064F830055DA9D /* AppConfigurationable.swift */,
+				23E967C525064EFA0055DA9D /* AppConfiguration.swift */,
+				2307F7A72508A55E00264944 /* ServiceConfiguration */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -523,6 +537,7 @@
 				23E967982505E2D40055DA9D /* ProfileViewController.swift in Sources */,
 				23E967CD250654D30055DA9D /* ModuleContext.swift in Sources */,
 				23E9674D2505D9F20055DA9D /* SceneDelegate.swift in Sources */,
+				2307F7AB2508AB4300264944 /* AppWindowConfiguration.swift in Sources */,
 				23E967CB25064FF90055DA9D /* User.swift in Sources */,
 				23E967B4250609BF0055DA9D /* AddTodoViewController.swift in Sources */,
 				23E967922505DDCE0055DA9D /* MainTabBarViewController.swift in Sources */,
@@ -530,6 +545,7 @@
 				23E967C825064F830055DA9D /* AppConfigurationable.swift in Sources */,
 				23E967942505DE180055DA9D /* IReviewerNavigationController.swift in Sources */,
 				23E9678F2505DCF30055DA9D /* AwardViewController.swift in Sources */,
+				2307F7A92508A58000264944 /* LoggerConfiguration.swift in Sources */,
 				23E967B625060ABA0055DA9D /* UIViewControllerExtension.swift in Sources */,
 				23E9678E2505DCF30055DA9D /* DiscoverViewController.swift in Sources */,
 				23E967B2250606E30055DA9D /* R.generated.swift in Sources */,

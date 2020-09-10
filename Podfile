@@ -16,6 +16,7 @@ def pod_base_module()
   pod 'FSPagerView', '0.8.3'
   pod 'IGListKit', '4.0.0'
   pod 'SDWebImage', '5.1.1'
+  pod 'CocoaLumberjack/Swift'
 end
 
 def pod_business_module()
@@ -24,6 +25,6 @@ def pod_business_module()
 end
 
 target 'iReviewer'  do
-	pod_base_module()
+  pod_base_module()
   pod_business_module()
 end
