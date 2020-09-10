@@ -11,6 +11,8 @@ import UIKit
 public class IReviewerNavigationController: UINavigationController {
   private var isPushing = false
 
+  public var willShowCallback: (() -> Void)?
+
   override public func viewDidLoad() {
     super.viewDidLoad()
 
@@ -48,5 +50,9 @@ public class IReviewerNavigationController: UINavigationController {
 extension IReviewerNavigationController: UINavigationControllerDelegate {
   public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
     self.isPushing = false
+  }
+  
+  public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+    willShowCallback?()
   }
 }
