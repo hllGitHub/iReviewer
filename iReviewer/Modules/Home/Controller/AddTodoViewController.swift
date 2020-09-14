@@ -15,5 +15,17 @@ class AddTodoViewController: UIViewController {
 
     view.backgroundColor = .white
     title = R.string.root.todoTitle()
+
+    configureNavigationItem()
+  }
+
+  func configureNavigationItem() {
+    // Add rightBarButtonItem for done.
+    let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem
+  }
+
+  @objc func done() {
+    Logger.debug("Done. Finish adding todo.", "AddTodo")
   }
 }
