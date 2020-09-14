@@ -60,7 +60,9 @@ class HomeViewController: UIViewController {
   }
 
   @objc func addTodo() {
-    self.navigationController?.pushViewController(AddTodoViewController(), animated: true)
+    let addTodoViewController = AddTodoViewController()
+    addTodoViewController.hidesBottomBarWhenPushed = true
+    self.navigationController?.pushViewController(addTodoViewController, animated: true)
   }
 
   @objc func selectToday() {
