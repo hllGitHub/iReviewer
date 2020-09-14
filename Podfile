@@ -20,7 +20,7 @@ def pod_base_module()
 end
 
 def pod_business_module()
-  pod 'CVCalendar', '~> 1.7.0'
+  pod 'JTCalendar', '~> 2.2.6'
   pod 'AFDateHelper', '~> 4.3.0'
 end
 

@@ -7,21 +7,31 @@
 //
 
 import UIKit
-import CVCalendar
 import PureLayout
 import AFDateHelper
+import JTCalendar
 
 class HomeViewController: UIViewController {
-  private var menuView: CVCalendarMenuView = {
-    let menuView = CVCalendarMenuView()
+  // JTCalendar
+  private var calendarMenuView: JTCalendarMenuView = {
+    let menuView = JTCalendarMenuView()
     menuView.translatesAutoresizingMaskIntoConstraints = false
     return menuView
   }()
-  private var calendarView: CVCalendarView = {
-    let calendarView = CVCalendarView()
-    calendarView.translatesAutoresizingMaskIntoConstraints = false
-    return calendarView
+
+  private var calendarContentView: JTHorizontalCalendarView = {
+    let contentView = JTHorizontalCalendarView()
+    contentView.translatesAutoresizingMaskIntoConstraints = false
+    return contentView
   }()
+
+  private var calendarManager: JTCalendarManager = {
+    let manager = JTCalendarManager()
+    manager.settings?.pageViewHaveWeekDaysView = true
+    return manager
+  }()
+
+  private var selectedDate = Date()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,39 +41,12 @@ class HomeViewController: UIViewController {
     // Configure navigationItem
     configureNavigationItem()
 
-    // Setup UI
-    setupUI()
+    // Setup calendar
+    configureCalendar()
   }
 
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-
-    menuView.commitMenuViewUpdate()
-    calendarView.commitCalendarViewUpdate()
-  }
-
-  func setupUI() {
-    menuView.menuViewDelegate = self
-    calendarView.calendarDelegate = self
-    calendarView.calendarAppearanceDelegate = self
-    calendarView.toggleCurrentDayView()
-
-    // Initial navTitle
-    showNavTitle(from: calendarView.presentedDate)
-
-    view.addSubview(menuView)
-    view.addSubview(calendarView)
-
-    // Auto layout
-    menuView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    menuView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-    menuView.topAnchor.constraint(equalTo: view.topAnchor, constant: 5).isActive = true
-    menuView.heightAnchor.constraint(equalToConstant: 15).isActive = true
-
-    calendarView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    calendarView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-    calendarView.topAnchor.constraint(equalTo: menuView.bottomAnchor).isActive = true
-    calendarView.heightAnchor.constraint(equalToConstant: 320).isActive = true
   }
 
   func configureNavigationItem() {
@@ -76,66 +59,96 @@ class HomeViewController: UIViewController {
     self.navigationItem.rightBarButtonItem = rightBarButtonItem
   }
 
-  private func showNavTitle(from date: CVDate) {
-    guard let currentDate = date.convertedDate() else {
-      return
-    }
-    let shortMonth = currentDate.toString(style: .shortMonth)
-    let dateTitle = shortMonth + "," + currentDate.toString(format: .isoYear)
-    navigationItem.title = dateTitle
-  }
-
   @objc func addTodo() {
     self.navigationController?.pushViewController(AddTodoViewController(), animated: true)
   }
 
   @objc func selectToday() {
-    calendarView.toggleCurrentDayView()
+    calendarManager.setDate(Date())
+  }
+
+  private func configureCalendar() {
+    calendarManager.delegate = self
+
+    calendarManager.menuView = calendarMenuView
+    calendarManager.contentView = calendarContentView
+    calendarManager.setDate(Date())
+
+    view.addSubview(calendarMenuView)
+    view.addSubview(calendarContentView)
+
+    // Auto layout
+    calendarMenuView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+    calendarMenuView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    calendarMenuView.topAnchor.constraint(equalTo: view.topAnchor, constant: 5).isActive = true
+    calendarMenuView.heightAnchor.constraint(equalToConstant: 15).isActive = true
+
+    calendarContentView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+    calendarContentView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    calendarContentView.topAnchor.constraint(equalTo: calendarMenuView.bottomAnchor).isActive = true
+    calendarContentView.heightAnchor.constraint(equalToConstant: 320).isActive = true
   }
 }
 
-extension HomeViewController: MenuViewDelegate {
-  func dayOfWeekFont() -> UIFont {
-    return .h3
+extension HomeViewController: JTCalendarDelegate {
+  func calendar(_ calendar: JTCalendarManager?, prepareDayView dayView: (UIView & JTCalendarDay)?) {
+    guard let dayView = dayView as? JTCalendarDayView, let dateHelper = calendarManager.dateHelper else {
+      return
+    }
+
+    dayView.isHidden = false
+
+    if dayView.isFromAnotherMonth() {
+      dayView.isHidden = true
+    } else if dateHelper.date(Date(), isTheSameDayThan: dayView.date) {
+      dayView.circleView.isHidden = false
+      dayView.circleView.backgroundColor = .blue
+      dayView.dotView.backgroundColor = .white
+      dayView.textLabel.textColor = .white
+    } else if dateHelper.date(selectedDate, isTheSameDayThan: dayView.date) {
+      dayView.circleView.isHidden = false
+      dayView.circleView.backgroundColor = .red
+      dayView.dotView.backgroundColor = .white
+      dayView.textLabel.textColor = .white
+    } else {
+      dayView.circleView.isHidden = true
+      dayView.dotView.backgroundColor = .red
+      dayView.textLabel.textColor = .black
+    }
+
+//    dayView.dotView.isHidden = false
   }
 
-  func dayOfWeekTextColor() -> UIColor {
-    return .orange
-  }
-}
+  func calendar(_ calendar: JTCalendarManager?, didTouchDayView dayView: (UIView & JTCalendarDay)?) {
+    guard let dayView = dayView as? JTCalendarDayView, let dateHelper = calendarManager.dateHelper else {
+      return
+    }
 
-extension HomeViewController: CVCalendarViewDelegate {
-  func presentationMode() -> CalendarMode {
-    return .monthView
-  }
+    // Use to indicate the selected date
+    selectedDate = dayView.date
 
-  func firstWeekday() -> Weekday {
-    return .sunday
-  }
+    // Animation for the circleView
+    dayView.circleView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+    UIView.transition(with: dayView, duration: 0.3, options: .allowAnimatedContent, animations: {
+      dayView.circleView.transform = CGAffineTransform.identity
+      self.calendarManager.reload()
+    }, completion: nil)
 
-  func shouldShowWeekdaysOut() -> Bool {
-    return true
-  }
-
-  func shouldAutoSelectDayOnWeekChange() -> Bool {
-    return true
-  }
-
-  func shouldSelectRange() -> Bool {
-    return false
-  }
-
-  func presentedDateUpdated(_ date: CVDate) {
-    showNavTitle(from: date)
-  }
-}
-
-extension HomeViewController: CVCalendarViewAppearanceDelegate {
-  func dayLabelWeekdayFont() -> UIFont {
-    return .h3
+    // Load the previous or next page if touch a day from another month
+    if !dateHelper.date(calendarContentView.date, isTheSameMonthThan: dayView.date) {
+      if calendarContentView.date.compare(dayView.date) == .orderedAscending {
+        calendarContentView.loadNextPageWithAnimation()
+      } else {
+        calendarContentView.loadPreviousPageWithAnimation()
+      }
+    }
   }
 
-  func dayLabelPresentWeekdayBoldFont() -> UIFont {
-    return .body1
+  func calendarBuildDayView(_ calendar: JTCalendarManager?) -> (UIView & JTCalendarDay)? {
+    let view = JTCalendarDayView()
+    view.textLabel.font = .customYuantiRegularFont(ofSize: 14)
+    view.textLabel.textColor = .black
+    view.dotView.backgroundColor = .red
+    return view
   }
 }

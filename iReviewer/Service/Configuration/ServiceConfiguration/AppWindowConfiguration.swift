@@ -43,4 +43,3 @@ class IReviewerAppearence {
     UIViewController.swizzledViewDidLoad()
   }
 }
-
