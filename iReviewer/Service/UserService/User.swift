@@ -9,7 +9,13 @@
 import Foundation
 
 public struct User: Codable {
-  
+  public var name: String
+
+  public var userId: String
+
+  static var defaultUser: User {
+    return User(name: "Test", userId: "1")
+  }
 }
 
 protocol UserLifecycleService: class {

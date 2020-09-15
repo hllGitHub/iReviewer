@@ -13,6 +13,11 @@ PODS:
   - R.swift (5.2.2):
     - R.swift.Library (~> 5.2.0)
   - R.swift.Library (5.2.0)
+  - Realm (5.3.6):
+    - Realm/Headers (= 5.3.6)
+  - Realm/Headers (5.3.6)
+  - RealmSwift (5.3.6):
+    - Realm (= 5.3.6)
   - RxBlocking (5.0.1):
     - RxSwift (~> 5)
   - RxCocoa (5.0.1):
@@ -39,6 +44,7 @@ DEPENDENCIES:
   - JTCalendar (~> 2.2.6)
   - PureLayout (= 3.1.4)
   - R.swift
+  - RealmSwift
   - RxBlocking (= 5.0.1)
   - RxCocoa (= 5.0.1)
   - RxDataSources (= 4.0.1)
@@ -58,6 +64,8 @@ SPEC REPOS:
     - PureLayout
     - R.swift
     - R.swift.Library
+    - Realm
+    - RealmSwift
     - RxBlocking
     - RxCocoa
     - RxDataSources
@@ -77,6 +85,8 @@ SPEC CHECKSUMS:
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  Realm: cd400dd7e5b5bb5c8ae9842eecd73792369e6ec0
+  RealmSwift: 99a16dbdee5d6dfb3d91d56088a9f8c15c0871d1
   RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
@@ -85,6 +95,6 @@ SPEC CHECKSUMS:
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 0498522f8d14b9519ab22bd34941180dd018638d
+PODFILE CHECKSUM: 9d0c60b6da0363fd76b6c11a5a63b5033bf86941
 
 COCOAPODS: 1.9.3

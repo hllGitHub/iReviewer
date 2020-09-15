@@ -11,4 +11,13 @@
 "tab-award-title" = "奖励";
 "tab-profile-title" = "个人中心";
 
-"Todo-title" = "创建项目";
+// Home
+"todo-title" = "创建项目";
+"todo-add" = "添加任务";
+
+// Discover
+"menu-item-one-day" = "我的一天";
+"menu-item-important" = "重要";
+"menu-item-plan" = "已计划日程";
+"menu-item-assign" = "已分配给你";
+"menu-item-task" = "任务";

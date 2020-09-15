@@ -170,15 +170,123 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 1 images.
+  /// This `R.image` struct is generated, and contains static references to 13 images.
   struct image {
     /// Image `back`.
     static let back = Rswift.ImageResource(bundle: R.hostingBundle, name: "back")
+    /// Image `iconAdd`.
+    static let iconAdd = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconAdd")
+    /// Image `iconCircle`.
+    static let iconCircle = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconCircle")
+    /// Image `iconPerson`.
+    static let iconPerson = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconPerson")
+    /// Image `iconReminder`.
+    static let iconReminder = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconReminder")
+    /// Image `iconStar`.
+    static let iconStar = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconStar")
+    /// Image `iconSun`.
+    static let iconSun = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconSun")
+    /// Image `iconTask`.
+    static let iconTask = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconTask")
+    /// Image `scene1`.
+    static let scene1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene1")
+    /// Image `scene2`.
+    static let scene2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene2")
+    /// Image `scene3`.
+    static let scene3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene3")
+    /// Image `scene4`.
+    static let scene4 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene4")
+    /// Image `scene5`.
+    static let scene5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene5")
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "back", bundle: ..., traitCollection: ...)`
     static func back(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.back, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconAdd", bundle: ..., traitCollection: ...)`
+    static func iconAdd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconAdd, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconCircle", bundle: ..., traitCollection: ...)`
+    static func iconCircle(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconCircle, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconPerson", bundle: ..., traitCollection: ...)`
+    static func iconPerson(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconPerson, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconReminder", bundle: ..., traitCollection: ...)`
+    static func iconReminder(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconReminder, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconStar", bundle: ..., traitCollection: ...)`
+    static func iconStar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconStar, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconSun", bundle: ..., traitCollection: ...)`
+    static func iconSun(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconSun, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconTask", bundle: ..., traitCollection: ...)`
+    static func iconTask(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconTask, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene1", bundle: ..., traitCollection: ...)`
+    static func scene1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene2", bundle: ..., traitCollection: ...)`
+    static func scene2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene2, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene3", bundle: ..., traitCollection: ...)`
+    static func scene3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene3, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene4", bundle: ..., traitCollection: ...)`
+    static func scene4(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene4, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene5", bundle: ..., traitCollection: ...)`
+    static func scene5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene5, compatibleWith: traitCollection)
     }
     #endif
 
@@ -218,16 +326,28 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.root` struct is generated, and contains static references to 5 localization keys.
+    /// This `R.string.root` struct is generated, and contains static references to 11 localization keys.
     struct root {
       /// Value: 个人中心
       static let tabProfileTitle = Rswift.StringResource(key: "tab-profile-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 任务
+      static let menuItemTask = Rswift.StringResource(key: "menu-item-task", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 创建项目
-      static let todoTitle = Rswift.StringResource(key: "Todo-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      static let todoTitle = Rswift.StringResource(key: "todo-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 发现
       static let tabDiscoverTitle = Rswift.StringResource(key: "tab-discover-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 奖励
       static let tabAwardTitle = Rswift.StringResource(key: "tab-award-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 已分配给你
+      static let menuItemAssign = Rswift.StringResource(key: "menu-item-assign", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 已计划日程
+      static let menuItemPlan = Rswift.StringResource(key: "menu-item-plan", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 我的一天
+      static let menuItemOneDay = Rswift.StringResource(key: "menu-item-one-day", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 添加任务
+      static let todoAdd = Rswift.StringResource(key: "todo-add", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 重要
+      static let menuItemImportant = Rswift.StringResource(key: "menu-item-important", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 首页
       static let tabHomeTitle = Rswift.StringResource(key: "tab-home-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
 
@@ -244,17 +364,30 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("tab-profile-title", tableName: "root", bundle: bundle, comment: "")
       }
 
-      /// Value: 创建项目
-      static func todoTitle(preferredLanguages: [String]? = nil) -> String {
+      /// Value: 任务
+      static func menuItemTask(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("Todo-title", tableName: "root", bundle: hostingBundle, comment: "")
+          return NSLocalizedString("menu-item-task", tableName: "root", bundle: hostingBundle, comment: "")
         }
 
         guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
-          return "Todo-title"
+          return "menu-item-task"
         }
 
-        return NSLocalizedString("Todo-title", tableName: "root", bundle: bundle, comment: "")
+        return NSLocalizedString("menu-item-task", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 创建项目
+      static func todoTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("todo-title", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "todo-title"
+        }
+
+        return NSLocalizedString("todo-title", tableName: "root", bundle: bundle, comment: "")
       }
 
       /// Value: 发现
@@ -281,6 +414,71 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("tab-award-title", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 已分配给你
+      static func menuItemAssign(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("menu-item-assign", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "menu-item-assign"
+        }
+
+        return NSLocalizedString("menu-item-assign", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 已计划日程
+      static func menuItemPlan(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("menu-item-plan", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "menu-item-plan"
+        }
+
+        return NSLocalizedString("menu-item-plan", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 我的一天
+      static func menuItemOneDay(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("menu-item-one-day", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "menu-item-one-day"
+        }
+
+        return NSLocalizedString("menu-item-one-day", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 添加任务
+      static func todoAdd(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("todo-add", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "todo-add"
+        }
+
+        return NSLocalizedString("todo-add", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 重要
+      static func menuItemImportant(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("menu-item-important", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "menu-item-important"
+        }
+
+        return NSLocalizedString("menu-item-important", tableName: "root", bundle: bundle, comment: "")
       }
 
       /// Value: 首页

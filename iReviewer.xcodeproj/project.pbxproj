@@ -13,6 +13,17 @@
 		2324F83B250F8F5C0007BA00 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F837250F8F5C0007BA00 /* Logger.swift */; };
 		2324F83C250F8F5C0007BA00 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F838250F8F5C0007BA00 /* LogLevel.swift */; };
 		2324F83D250F8F5C0007BA00 /* LogInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F839250F8F5C0007BA00 /* LogInfo.swift */; };
+		2324F841250F96530007BA00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F840250F96530007BA00 /* Event.swift */; };
+		23729D2B251094F5005EBB30 /* DBBaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D2A251094F5005EBB30 /* DBBaseObject.swift */; };
+		23729D2D25109A90005EBB30 /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D2C25109A90005EBB30 /* RealmConfiguration.swift */; };
+		23729D2F2510A2D7005EBB30 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D2E2510A2D7005EBB30 /* UIApplicationExtension.swift */; };
+		23729D312510A303005EBB30 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D302510A303005EBB30 /* UIImageExtension.swift */; };
+		23729D332510AC63005EBB30 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D322510AC63005EBB30 /* DateExtension.swift */; };
+		23729D352510B5CF005EBB30 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D342510B5CF005EBB30 /* UITextFieldExtension.swift */; };
+		23729D372510BCDD005EBB30 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D362510BCDD005EBB30 /* InputView.swift */; };
+		23729D392510BD89005EBB30 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23729D382510BD89005EBB30 /* UIViewExtension.swift */; };
+		2382DB4925106BDA0033D5BA /* OneDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382DB4825106BDA0033D5BA /* OneDayViewController.swift */; };
+		23E6688A25106560006D3BB7 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6688925106560006D3BB7 /* MenuCell.swift */; };
 		23E9674B2505D9F20055DA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674A2505D9F20055DA9D /* AppDelegate.swift */; };
 		23E9674D2505D9F20055DA9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674C2505D9F20055DA9D /* SceneDelegate.swift */; };
 		23E9674F2505D9F20055DA9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674E2505D9F20055DA9D /* ViewController.swift */; };
@@ -60,6 +71,17 @@
 		2324F837250F8F5C0007BA00 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		2324F838250F8F5C0007BA00 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		2324F839250F8F5C0007BA00 /* LogInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInfo.swift; sourceTree = "<group>"; };
+		2324F840250F96530007BA00 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		23729D2A251094F5005EBB30 /* DBBaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBaseObject.swift; sourceTree = "<group>"; };
+		23729D2C25109A90005EBB30 /* RealmConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
+		23729D2E2510A2D7005EBB30 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		23729D302510A303005EBB30 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		23729D322510AC63005EBB30 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		23729D342510B5CF005EBB30 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		23729D362510BCDD005EBB30 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		23729D382510BD89005EBB30 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2382DB4825106BDA0033D5BA /* OneDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayViewController.swift; sourceTree = "<group>"; };
+		23E6688925106560006D3BB7 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		23E967472505D9F20055DA9D /* iReviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iReviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E9674A2505D9F20055DA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23E9674C2505D9F20055DA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +138,7 @@
 			children = (
 				2307F7A82508A58000264944 /* LoggerConfiguration.swift */,
 				2307F7AA2508AB4300264944 /* AppWindowConfiguration.swift */,
+				23729D2C25109A90005EBB30 /* RealmConfiguration.swift */,
 			);
 			path = ServiceConfiguration;
 			sourceTree = "<group>";
@@ -129,6 +152,22 @@
 				2324F839250F8F5C0007BA00 /* LogInfo.swift */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		23729D29251094AF005EBB30 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				23729D2A251094F5005EBB30 /* DBBaseObject.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		23E6688825106548006D3BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23E6688925106560006D3BB7 /* MenuCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		23E9673E2505D9F20055DA9D = {
@@ -213,6 +252,7 @@
 		23E967802505DCF20055DA9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2324F840250F96530007BA00 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +260,7 @@
 		23E967812505DCF20055DA9D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				23729D362510BCDD005EBB30 /* InputView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -227,6 +268,7 @@
 		23E967822505DCF20055DA9D /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				23E6688825106548006D3BB7 /* View */,
 				23E967832505DCF20055DA9D /* Controller */,
 			);
 			path = Discover;
@@ -236,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				23E967842505DCF20055DA9D /* DiscoverViewController.swift */,
+				2382DB4825106BDA0033D5BA /* OneDayViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +329,11 @@
 				2324F835250F8F5C0007BA00 /* Logger */,
 				23E967952505DF020055DA9D /* StyleGuide.swift */,
 				23E967B525060ABA0055DA9D /* UIViewControllerExtension.swift */,
+				23729D382510BD89005EBB30 /* UIViewExtension.swift */,
+				23729D342510B5CF005EBB30 /* UITextFieldExtension.swift */,
+				23729D2E2510A2D7005EBB30 /* UIApplicationExtension.swift */,
+				23729D302510A303005EBB30 /* UIImageExtension.swift */,
+				23729D322510AC63005EBB30 /* DateExtension.swift */,
 			);
 			path = Utlis;
 			sourceTree = "<group>";
@@ -321,6 +369,7 @@
 		23E967C325064ECF0055DA9D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				23729D29251094AF005EBB30 /* DataBase */,
 				23E967C925064FF10055DA9D /* UserService */,
 				23E967C425064EEA0055DA9D /* Configuration */,
 			);
@@ -552,11 +601,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23729D2D25109A90005EBB30 /* RealmConfiguration.swift in Sources */,
+				2382DB4925106BDA0033D5BA /* OneDayViewController.swift in Sources */,
 				2324F83D250F8F5C0007BA00 /* LogInfo.swift in Sources */,
 				23E9674F2505D9F20055DA9D /* ViewController.swift in Sources */,
+				23729D332510AC63005EBB30 /* DateExtension.swift in Sources */,
 				23E9674B2505D9F20055DA9D /* AppDelegate.swift in Sources */,
 				23E967982505E2D40055DA9D /* ProfileViewController.swift in Sources */,
 				23E967CD250654D30055DA9D /* ModuleContext.swift in Sources */,
+				23729D392510BD89005EBB30 /* UIViewExtension.swift in Sources */,
 				2324F83B250F8F5C0007BA00 /* Logger.swift in Sources */,
 				23E9674D2505D9F20055DA9D /* SceneDelegate.swift in Sources */,
 				2307F7AB2508AB4300264944 /* AppWindowConfiguration.swift in Sources */,
@@ -565,16 +618,23 @@
 				23E967922505DDCE0055DA9D /* MainTabBarViewController.swift in Sources */,
 				23E9678D2505DCF30055DA9D /* HomeViewController.swift in Sources */,
 				23E967C825064F830055DA9D /* AppConfigurationable.swift in Sources */,
+				23729D2F2510A2D7005EBB30 /* UIApplicationExtension.swift in Sources */,
 				23E967942505DE180055DA9D /* IReviewerNavigationController.swift in Sources */,
+				23729D2B251094F5005EBB30 /* DBBaseObject.swift in Sources */,
 				23E9678F2505DCF30055DA9D /* AwardViewController.swift in Sources */,
 				2307F7A92508A58000264944 /* LoggerConfiguration.swift in Sources */,
 				2324F83C250F8F5C0007BA00 /* LogLevel.swift in Sources */,
 				23E967B625060ABA0055DA9D /* UIViewControllerExtension.swift in Sources */,
+				23E6688A25106560006D3BB7 /* MenuCell.swift in Sources */,
+				23729D312510A303005EBB30 /* UIImageExtension.swift in Sources */,
+				23729D352510B5CF005EBB30 /* UITextFieldExtension.swift in Sources */,
 				2324F83A250F8F5C0007BA00 /* LoggerService.swift in Sources */,
 				23E9678E2505DCF30055DA9D /* DiscoverViewController.swift in Sources */,
 				23E967B2250606E30055DA9D /* R.generated.swift in Sources */,
 				23E967C625064EFA0055DA9D /* AppConfiguration.swift in Sources */,
+				23729D372510BCDD005EBB30 /* InputView.swift in Sources */,
 				23E967962505DF020055DA9D /* StyleGuide.swift in Sources */,
+				2324F841250F96530007BA00 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
