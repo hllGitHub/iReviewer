@@ -20,7 +20,7 @@ class DiscoverViewController: UIViewController {
   }()
 
   private var menuItems: [MenuItem] = [
-    MenuItem(iconImage: R.image.iconSun(), title: R.string.root.menuItemOneDay(), subTitle: nil),
+//    MenuItem(iconImage: R.image.iconSun(), title: R.string.root.menuItemOneDay(), subTitle: nil),
     MenuItem(iconImage: R.image.iconStar(), title: R.string.root.menuItemImportant(), subTitle: nil),
     MenuItem(iconImage: R.image.iconReminder(), title: R.string.root.menuItemPlan(), subTitle: nil),
     MenuItem(iconImage: R.image.iconPerson(), title: R.string.root.menuItemAssign(), subTitle: nil),

@@ -13,6 +13,7 @@
 
 // Home
 "todo-title" = "创建项目";
+"todo-add" = "添加任务";
 
 // Discover
 "menu-item-one-day" = "我的一天";

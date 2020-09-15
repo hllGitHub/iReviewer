@@ -22,7 +22,7 @@ public class AppConfiguration {
     self.environment = environment
 
     self.configurations = configurations.sorted { $0.priority > $1.priority }
-    let user = User()
+    let user = User.defaultUser
     self.configurations.forEach { (configuration) in
       configuration.setup(user: user)
     }

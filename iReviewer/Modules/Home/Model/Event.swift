@@ -14,14 +14,14 @@ public enum EventPriority: Int, Codable {
   case high = 300
 }
 
-struct Event: Codable {
-  var eventId: String
+class Event: DBBaseObject {
+  var eventId: String?
 
-  var name: String
+  dynamic var name: String = ""
 
-  var priority: EventPriority // 事件优先级，暂定只有三类
+  dynamic var priority: EventPriority = .low // 事件优先级，暂定只有三类
 
-  var createAt: String // 创建日期
+  dynamic var createAt: TimeInterval = 0 // 创建日期
 
-  var modifiedAt: String // 最后一次修改日期
+  dynamic var modifiedAt: TimeInterval = 0 // 最后一次修改日期
 }

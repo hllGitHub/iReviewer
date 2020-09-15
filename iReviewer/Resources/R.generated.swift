@@ -170,10 +170,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 6 images.
+  /// This `R.image` struct is generated, and contains static references to 13 images.
   struct image {
     /// Image `back`.
     static let back = Rswift.ImageResource(bundle: R.hostingBundle, name: "back")
+    /// Image `iconAdd`.
+    static let iconAdd = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconAdd")
+    /// Image `iconCircle`.
+    static let iconCircle = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconCircle")
     /// Image `iconPerson`.
     static let iconPerson = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconPerson")
     /// Image `iconReminder`.
@@ -184,11 +188,35 @@ struct R: Rswift.Validatable {
     static let iconSun = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconSun")
     /// Image `iconTask`.
     static let iconTask = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconTask")
+    /// Image `scene1`.
+    static let scene1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene1")
+    /// Image `scene2`.
+    static let scene2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene2")
+    /// Image `scene3`.
+    static let scene3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene3")
+    /// Image `scene4`.
+    static let scene4 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene4")
+    /// Image `scene5`.
+    static let scene5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "scene5")
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "back", bundle: ..., traitCollection: ...)`
     static func back(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.back, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconAdd", bundle: ..., traitCollection: ...)`
+    static func iconAdd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconAdd, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iconCircle", bundle: ..., traitCollection: ...)`
+    static func iconCircle(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconCircle, compatibleWith: traitCollection)
     }
     #endif
 
@@ -224,6 +252,41 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "iconTask", bundle: ..., traitCollection: ...)`
     static func iconTask(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.iconTask, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene1", bundle: ..., traitCollection: ...)`
+    static func scene1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene2", bundle: ..., traitCollection: ...)`
+    static func scene2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene2, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene3", bundle: ..., traitCollection: ...)`
+    static func scene3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene3, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene4", bundle: ..., traitCollection: ...)`
+    static func scene4(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene4, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "scene5", bundle: ..., traitCollection: ...)`
+    static func scene5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.scene5, compatibleWith: traitCollection)
     }
     #endif
 
@@ -263,7 +326,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.root` struct is generated, and contains static references to 10 localization keys.
+    /// This `R.string.root` struct is generated, and contains static references to 11 localization keys.
     struct root {
       /// Value: 个人中心
       static let tabProfileTitle = Rswift.StringResource(key: "tab-profile-title", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -281,6 +344,8 @@ struct R: Rswift.Validatable {
       static let menuItemPlan = Rswift.StringResource(key: "menu-item-plan", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 我的一天
       static let menuItemOneDay = Rswift.StringResource(key: "menu-item-one-day", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 添加任务
+      static let todoAdd = Rswift.StringResource(key: "todo-add", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 重要
       static let menuItemImportant = Rswift.StringResource(key: "menu-item-important", tableName: "root", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 首页
@@ -388,6 +453,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("menu-item-one-day", tableName: "root", bundle: bundle, comment: "")
+      }
+
+      /// Value: 添加任务
+      static func todoAdd(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("todo-add", tableName: "root", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "root", preferredLanguages: preferredLanguages) else {
+          return "todo-add"
+        }
+
+        return NSLocalizedString("todo-add", tableName: "root", bundle: bundle, comment: "")
       }
 
       /// Value: 重要

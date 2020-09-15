@@ -22,6 +22,7 @@ end
 def pod_business_module()
   pod 'JTCalendar', '~> 2.2.6'
   pod 'AFDateHelper', '~> 4.3.0'
+  pod 'RealmSwift'
 end
 
 target 'iReviewer'  do

@@ -11,6 +11,7 @@ import UIKit
 class MenuCell: UITableViewCell {
   private var iconImageView: UIImageView = {
     let imageView = UIImageView()
+    imageView.contentMode = .scaleAspectFit
     return imageView
   }()
 
@@ -63,7 +64,7 @@ class MenuCell: UITableViewCell {
 
     // AutoLayout
     iconImageView.autoPinEdge(toSuperviewEdge: .left, withInset: 16)
-    iconImageView.autoSetDimensions(to: CGSize(width: 28, height: 28))
+    iconImageView.autoSetDimensions(to: CGSize(width: 24, height: 24))
     iconImageView.autoAlignAxis(toSuperviewAxis: .horizontal)
 
     titleLabel.autoPinEdge(.left, to: .right, of: iconImageView, withOffset: 16)
