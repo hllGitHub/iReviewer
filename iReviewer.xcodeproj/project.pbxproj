@@ -13,6 +13,9 @@
 		2324F83B250F8F5C0007BA00 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F837250F8F5C0007BA00 /* Logger.swift */; };
 		2324F83C250F8F5C0007BA00 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F838250F8F5C0007BA00 /* LogLevel.swift */; };
 		2324F83D250F8F5C0007BA00 /* LogInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F839250F8F5C0007BA00 /* LogInfo.swift */; };
+		2324F841250F96530007BA00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324F840250F96530007BA00 /* Event.swift */; };
+		2382DB4925106BDA0033D5BA /* OneDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382DB4825106BDA0033D5BA /* OneDayViewController.swift */; };
+		23E6688A25106560006D3BB7 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6688925106560006D3BB7 /* MenuCell.swift */; };
 		23E9674B2505D9F20055DA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674A2505D9F20055DA9D /* AppDelegate.swift */; };
 		23E9674D2505D9F20055DA9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674C2505D9F20055DA9D /* SceneDelegate.swift */; };
 		23E9674F2505D9F20055DA9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9674E2505D9F20055DA9D /* ViewController.swift */; };
@@ -60,6 +63,9 @@
 		2324F837250F8F5C0007BA00 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		2324F838250F8F5C0007BA00 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		2324F839250F8F5C0007BA00 /* LogInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInfo.swift; sourceTree = "<group>"; };
+		2324F840250F96530007BA00 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		2382DB4825106BDA0033D5BA /* OneDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayViewController.swift; sourceTree = "<group>"; };
+		23E6688925106560006D3BB7 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		23E967472505D9F20055DA9D /* iReviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iReviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E9674A2505D9F20055DA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23E9674C2505D9F20055DA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +135,14 @@
 				2324F839250F8F5C0007BA00 /* LogInfo.swift */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		23E6688825106548006D3BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23E6688925106560006D3BB7 /* MenuCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		23E9673E2505D9F20055DA9D = {
@@ -213,6 +227,7 @@
 		23E967802505DCF20055DA9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2324F840250F96530007BA00 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +242,7 @@
 		23E967822505DCF20055DA9D /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				23E6688825106548006D3BB7 /* View */,
 				23E967832505DCF20055DA9D /* Controller */,
 			);
 			path = Discover;
@@ -236,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				23E967842505DCF20055DA9D /* DiscoverViewController.swift */,
+				2382DB4825106BDA0033D5BA /* OneDayViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -552,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2382DB4925106BDA0033D5BA /* OneDayViewController.swift in Sources */,
 				2324F83D250F8F5C0007BA00 /* LogInfo.swift in Sources */,
 				23E9674F2505D9F20055DA9D /* ViewController.swift in Sources */,
 				23E9674B2505D9F20055DA9D /* AppDelegate.swift in Sources */,
@@ -570,11 +588,13 @@
 				2307F7A92508A58000264944 /* LoggerConfiguration.swift in Sources */,
 				2324F83C250F8F5C0007BA00 /* LogLevel.swift in Sources */,
 				23E967B625060ABA0055DA9D /* UIViewControllerExtension.swift in Sources */,
+				23E6688A25106560006D3BB7 /* MenuCell.swift in Sources */,
 				2324F83A250F8F5C0007BA00 /* LoggerService.swift in Sources */,
 				23E9678E2505DCF30055DA9D /* DiscoverViewController.swift in Sources */,
 				23E967B2250606E30055DA9D /* R.generated.swift in Sources */,
 				23E967C625064EFA0055DA9D /* AppConfiguration.swift in Sources */,
 				23E967962505DF020055DA9D /* StyleGuide.swift in Sources */,
+				2324F841250F96530007BA00 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
